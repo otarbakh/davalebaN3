@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_Profileinfo"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Profile Info"
+        android:textColor="@color/blue"
+        android:textSize="35sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_Email"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:hint=" Please enter your email"
+        android:textColor="@color/stroke.Colour"
+        android:textColorHint="@color/pass.Colour"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Profileinfo" />
+
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_Username"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:hint="Please enter your Username"
+        android:textColor="@color/stroke.Colour"
+        android:textColorHint="@color/pass.Colour"
+        android:textSize="15sp"
+        app:layout_goneMarginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Email" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_FirstName"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:hint="Please enter your Firstname"
+        android:textColor="@color/stroke.Colour"
+        android:textColorHint="@color/pass.Colour"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Username" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_Lastname"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:hint="Please enter your Lastname"
+        android:textColor="@color/stroke.Colour"
+        android:textColorHint="@color/pass.Colour"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_FirstName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_Age"
+        android:layout_width="382dp"
+        android:layout_height="50dp"
+        android:hint="Please enter your Age"
+        android:textColor="@color/stroke.Colour"
+        android:textColorHint="@color/pass.Colour"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Lastname" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="468dp"
+        android:backgroundTint="@color/navyBlue.Colour"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="468dp"
+        android:backgroundTint="@color/navyBlue.Colour"
+        android:text="clear"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
